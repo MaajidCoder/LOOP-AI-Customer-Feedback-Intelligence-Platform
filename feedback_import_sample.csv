@@ -1,0 +1,31 @@
+title,description,rating,category,status
+Mobile app crash on startup,The mobile app crashes immediately after launching on iOS 17 devices.,1,BUG,NEW
+Add dark mode support,A native dark mode option would improve usability during nighttime.,5,FEATURE,NEW
+Slow report generation,Generating PDF reports takes more than 15 seconds.,2,IMPROVEMENT,REVIEW
+Google login support,Allow users to sign in using their Google accounts.,5,FEATURE,NEW
+Broken search functionality,The search bar does not return relevant feedback results.,2,BUG,NEW
+Improve dashboard performance,The analytics dashboard loads slowly with large datasets.,3,IMPROVEMENT,REVIEW
+Export to Excel,Provide an option to export reports in Excel format.,4,FEATURE,NEW
+Email notifications delayed,Notification emails are delivered several minutes late.,2,BUG,NEW
+Profile picture upload fails,Uploading profile pictures larger than 5 MB always fails.,2,BUG,NEW
+Session timeout too short,Users are logged out after only ten minutes of inactivity.,3,IMPROVEMENT,REVIEW
+Real-time notifications,Display new feedback instantly without refreshing the page.,5,FEATURE,NEW
+Incorrect sentiment analysis,Positive comments are sometimes classified as negative.,2,BUG,REVIEW
+Analytics graph not updating,Charts do not refresh after importing new feedback.,3,BUG,NEW
+Better mobile responsiveness,The dashboard layout breaks on smaller mobile screens.,4,IMPROVEMENT,NEW
+Password reset email missing,Some users never receive password reset emails.,1,BUG,NEW
+Filter by rating,Allow filtering feedback based on star ratings.,4,FEATURE,NEW
+Bulk delete feedback,Administrators should be able to delete multiple records at once.,5,FEATURE,NEW
+Duplicate feedback issue,Submitting the form twice creates duplicate entries.,2,BUG,REVIEW
+CSV upload is slow,Uploading large CSV files takes too much time.,3,IMPROVEMENT,REVIEW
+Improve accessibility,Increase color contrast for visually impaired users.,4,IMPROVEMENT,NEW
+Notification badge incorrect,Unread notification count is sometimes inaccurate.,2,BUG,NEW
+Auto-save feedback draft,Save unfinished feedback automatically while typing.,5,FEATURE,NEW
+Support multiple languages,Provide localization for multiple languages.,5,FEATURE,NEW
+Dashboard widgets customizable,Allow users to rearrange dashboard widgets.,4,FEATURE,NEW
+Comment editing feature,Users should be able to edit their submitted feedback.,4,FEATURE,NEW
+Feedback sorting options,"Allow sorting feedback by newest, oldest, and highest rating.",4,IMPROVEMENT,REVIEW
+API response timeout,The feedback API occasionally times out during peak hours.,2,BUG,REVIEW
+Loading spinner improvement,Replace the current loading spinner with a smoother animation.,4,IMPROVEMENT,NEW
+Keyboard shortcuts,Provide keyboard shortcuts for common dashboard actions.,5,FEATURE,NEW
+Excellent user experience,"The interface is intuitive, clean, and easy to navigate.",5,OTHER,ARCHIVED
