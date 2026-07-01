@@ -122,8 +122,8 @@ export async function classifyFeedbackText(text: string) {
       }
     `;
 
-    const response = await model.generateContent({ contents: [{ parts: [{ text: prompt }] }] });
-    const responseText = response.text || "";
+    const result = await model.generateContent({ contents: [{ parts: [{ text: prompt }] }] });
+    const responseText = result.response.text() || "";
     const cleanedText = cleanJsonString(responseText);
     return JSON.parse(cleanedText);
   } catch (error) {
@@ -189,8 +189,8 @@ export async function generateVoiceOfCustomerReport(stats: {
       }
     `;
 
-    const response = await model.generateContent({ contents: [{ parts: [{ text: prompt }] }] });
-    const responseText = response.text || "";
+    const result = await model.generateContent({ contents: [{ parts: [{ text: prompt }] }] });
+    const responseText = result.response.text() || "";
     const cleanedText = cleanJsonString(responseText);
     return JSON.parse(cleanedText);
   } catch (error) {
