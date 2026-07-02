@@ -255,9 +255,9 @@ export default function DashboardPage() {
             <h3 className="text-base font-bold text-slate-900">Feedback Volume</h3>
             <p className="text-xs text-slate-500">Submissions received over the last 7 days</p>
           </div>
-          <div className="h-64 flex-1">
+          <div className="h-64 w-full">
             {data && data.volumeOverTime.length > 0 ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height={256}>
                 <AreaChart data={data.volumeOverTime}>
                   <defs>
                     <linearGradient id="colorVolume" x1="0" y1="0" x2="0" y2="1">
@@ -283,9 +283,9 @@ export default function DashboardPage() {
             <h3 className="text-base font-bold text-slate-900">Customer Sentiment</h3>
             <p className="text-xs text-slate-500">Distribution based on user ratings</p>
           </div>
-          <div className="h-64 flex-1 relative flex items-center justify-center">
+          <div className="h-64 w-full relative flex items-center justify-center">
             {data && data.sentimentBreakdown.some((s) => s.value > 0) ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height={256}>
                 <PieChart>
                   <Pie
                     data={data.sentimentBreakdown}
@@ -326,9 +326,9 @@ export default function DashboardPage() {
             <h3 className="text-base font-bold text-slate-900">Category Distribution</h3>
             <p className="text-xs text-slate-500">Breakdown of feedback categories in the workspace</p>
           </div>
-          <div className="h-64 flex-1">
+          <div className="h-64 w-full">
             {data && data.categoryBreakdown.some((c) => c.value > 0) ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height={256}>
                 <BarChart data={data.categoryBreakdown}>
                   <XAxis dataKey="name" stroke="#94a3b8" fontSize={11} tickLine={false} />
                   <YAxis stroke="#94a3b8" fontSize={11} tickLine={false} />
