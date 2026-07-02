@@ -67,7 +67,7 @@ export function LoginForm() {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+        <form onSubmit={handleSubmit} className="mt-8 space-y-6" autoComplete="off">
           {error && (
             <div className="flex items-center gap-3 rounded-lg border border-red-500/20 bg-red-500/10 p-4 text-sm text-red-400">
               <AlertCircle className="h-5 w-5 shrink-0" />
@@ -92,6 +92,7 @@ export function LoginForm() {
                   placeholder="name@company.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  autoComplete="off"
                   className="w-full rounded-xl border border-slate-800 bg-slate-950 py-3 pl-11 pr-4 text-sm text-white placeholder-slate-500 transition duration-200 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                 />
               </div>
@@ -113,7 +114,8 @@ export function LoginForm() {
                   placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full rounded-xl border border-slate-800 bg-slate-950 py-3 pl-11 pr-4 text-sm text-white placeholder-slate-500 transition duration-200 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                  autoComplete="new-password"
+                  className="w-full rounded-xl border border-slate-850 bg-slate-950 py-3 pl-11 pr-4 text-sm text-white placeholder-slate-500 transition duration-200 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                 />
               </div>
             </div>
@@ -134,45 +136,6 @@ export function LoginForm() {
             )}
           </button>
         </form>
-
-        {/* Quick Role Login Options */}
-        <div className="mt-6 border-t border-slate-800/80 pt-5">
-          <p className="text-center text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-2">
-            Quick Role Login (Preset Roles)
-          </p>
-          <div className="grid grid-cols-3 gap-2">
-            <button
-              type="button"
-              onClick={() => {
-                setEmail("admin@company.com");
-                setPassword("password123");
-              }}
-              className="flex flex-col items-center justify-center py-2 px-1 rounded-xl border border-slate-850 bg-slate-950/80 hover:bg-indigo-500/10 hover:border-indigo-500/30 transition text-xs font-semibold text-slate-400 hover:text-indigo-400 cursor-pointer"
-            >
-              <span>Admin</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setEmail("analyst@company.com");
-                setPassword("password123");
-              }}
-              className="flex flex-col items-center justify-center py-2 px-1 rounded-xl border border-slate-850 bg-slate-950/80 hover:bg-purple-500/10 hover:border-purple-500/30 transition text-xs font-semibold text-slate-400 hover:text-purple-400 cursor-pointer"
-            >
-              <span>Analyst</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setEmail("viewer@company.com");
-                setPassword("password123");
-              }}
-              className="flex flex-col items-center justify-center py-2 px-1 rounded-xl border border-slate-850 bg-slate-950/80 hover:bg-emerald-500/10 hover:border-emerald-500/30 transition text-xs font-semibold text-slate-400 hover:text-emerald-400 cursor-pointer"
-            >
-              <span>Viewer</span>
-            </button>
-          </div>
-        </div>
 
         <div className="mt-8 text-center text-xs text-slate-400">
           Don't have an account?{" "}
