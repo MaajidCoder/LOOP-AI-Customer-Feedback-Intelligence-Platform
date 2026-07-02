@@ -3,12 +3,15 @@
 > A corporate-grade web application that helps companies ingest, analyze, cluster, and query customer feedback semantically. Built as part of the Zidio Development Internship.
 
 ---
+<img width="1915" height="917" alt="image" src="https://github.com/user-attachments/assets/b3197c95-20a5-4572-8bc6-2f68542a01ba" />
 
 ## 🚀 Product Showcase & Key Features
 
 LOOP transforms scattered feedback (support tickets, reviews, sales notes) into structured, evidence-backed decisions using role-based access control and retrieval-grounded AI.
 
 ### Core Features
+<img width="1886" height="916" alt="image" src="https://github.com/user-attachments/assets/3b4c22dd-0619-4852-aca1-fde406e45bff" />
+
 - **Multi-Tenant Workspaces:** Absolute data isolation at the database query level. Users from Company A can never access or query Company B's database records.
 - **Feedback Ingest Center:** Bulk CSV import, single-entry forms, and live simulation feeds mimicking App Store and Intercom tickets.
 - **Feedback Inbox:** A fully-featured list view supporting full-text search, server-side pagination, sorting, status transitions (`NEW` → `REVIEW` → `RESOLVED` → `ARCHIVED`), and category tagging.
@@ -18,6 +21,11 @@ LOOP transforms scattered feedback (support tickets, reviews, sales notes) into 
   - Categories distribution and top trending user themes
 
 ### AI Features (Powered by Gemini)
+<img width="1878" height="896" alt="image" src="https://github.com/user-attachments/assets/5042cacb-c619-4da2-b881-2eaa84def6c5" />
+<img width="1910" height="900" alt="image" src="https://github.com/user-attachments/assets/19faf5bc-2a61-45f6-840b-6879172db069" />
+<img width="1908" height="903" alt="image" src="https://github.com/user-attachments/assets/da40786f-8646-48a0-abac-973bd8901b5e" />
+
+
 - **Auto-Classification:** On ingestion, feedback items are classified by sentiment (Positive, Negative, Neutral), rated, and tagged with a theme and product area.
 - **Theme Clustering:** Grouping feedback dynamically into workspace-specific themes to track spike anomalies.
 - **Ask LOOP (Grounded Q&A):** A semantic AI search page that embeds questions, searches the vector database, and generates a response citing specific feedback sources.
